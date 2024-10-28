@@ -3,12 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>snake</title>
+  <title>snake</title><style>
+    .playagain{
+      background: black;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      left: 45%;
+      top: 45%;
+      display: none;
+      cursor: pointer;
+    }
+    body{
+      color: white;
+    }
+  </style>
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
   <h1>Snake</h1>
   <canvas id="board"></canvas>
+  <button class="playagain"id="playagain">play again ?</button>
+
+  <audio src="sounds/mixkit-explainer-video-game-alert-sweep-236.wav" id="changedirection"></audio>
+  <audio src="sounds/mixkit-game-ball-tap-2073.wav" id="eat"></audio>
+  <audio src=""></audio>
   <script src="app.js"></script>
 </body>
 </html>
